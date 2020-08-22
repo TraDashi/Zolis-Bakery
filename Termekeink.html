@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/termekeink.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Termékeink</title>
+</head>
+
+<body>
+    <header id="header">
+        <img id="bakery" src="/img/logo.jpg" alt="logo">
+        <h1>Zoli's Bakery - Ha egy jó falatra vágysz!</h1>
+    </header>
+
+    <div class="head" id="head">
+        <ul>
+            <li>
+                <a href="/Home.html">Főoldal</a>
+            </li>
+            <li>
+                <a href="/Termekeink.html">Termékeink</a>
+            </li>
+            <li>
+                <a href="/Uzleteink.html">Üzleteink</a>
+            </li>
+            <li>
+                <a href="/Rendeles.html">Rendelés</a>
+            </li>
+            <li>
+                <a href="/Rólunk.html">Rólunk</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="termekek">
+        <h3 id="kenyer1">Kenyerek</h3>
+        <div class="img-div">
+                <img id="kep" src="/img/kenyér/feher.jpg" alt="Fehér kenyér">
+                <img id="kep" src="/img/kenyér/bagett.jpg" alt="Bagett">
+                <img id="kep" src="/img/kenyér/félbarna.jpg" alt="Félbarna kenyér">
+                <img id="kep" src="/img/kenyér/sokmagvas.jpg" alt="Sokmagvas">
+        </div>
+
+        <h3 id="kenyer">Péksütemények</h3>
+        <div class="img-div">
+            <img id="kep" src="/img/péksütemény/bajor.jpg" alt="Bajor croissant">
+            <img id="kep" src="/img/péksütemény/vajas.jpg" alt="Vajas croissant">
+            <img id="kep" src="/img/péksütemény/kurtos.jpg" alt="Kürtöskalács">
+            <img id="kep" src="/img/péksütemény/csiga.jpg" alt="Kakaóscsiga">
+        </div>
+
+        <h3 id="kenyer">Szendvicsek</h3>
+        <div class="img-div">
+            <img id="kep" src="/img/szendvics/classic.jpg" alt="Classic szendvics">
+            <img id="kep" src="/img/szendvics/sajtos.jpg" alt="Sajtos szendvics">
+            <img id="kep" src="/img/szendvics/tonhalas.jpg" alt="Tonhalas szendvics">
+            <img id="kep" src="/img/szendvics/husos.jpg" alt="Húsos szendvics">
+        </div>
+
+        <h3 id="kenyer">Fánkok</h3>
+        <div class="img-div">
+            <img id="kep" src="/img/fánk/almas.jpg" alt="Almás fánk">
+            <img id="kep" src="/img/fánk/csokis.jpg" alt="Csokis fánk">
+            <img id="kep" src="/img/fánk/epres.jpg" alt="Epres fánk">
+            <img id="kep" src="/img/fánk/unikornis.jpg" alt="Unikornis fánk">
+        </div>
+
+        <h3 id="kenyer">Torták</h3>
+        <div class="img-div">
+            <img id="kep" src="/img/torta/csoki.jpg" alt="Csoki torta">
+            <img id="kep" src="/img/torta/cupcake.jpg" alt="Muffin">
+            <img id="kep" src="/img/torta/lime.jpg" alt="Lime torta">
+            <img id="kep" src="/img/torta/sajt.jpg" alt="Sajt torta">
+        </div>
+
+        <h3 id="kenyer">Sajtok</h3>
+        <div class="img-div">
+            <img id="kep" src="/img/sajt/gouda.jpg" alt="Gouda sajt">
+            <img id="kep" src="/img/sajt/kek.jpg" alt="Kék sajt">
+            <img id="kep" src="/img/sajt/parmezan.jpg" alt="Parmezán sajt">
+            <img id="kep" src="/img/sajt/olasz.jpg" alt="Trappista sajt">
+        </div>
+    </div>
+
+    <script>
+        var head = document.getElementById('head');
+
+        window.onscroll = function () {
+
+            if (window.pageYOffset > 100) {
+
+                head.style.position = "fixed";
+                head.style.top = 0;
+
+            } else {
+                // nav.style.position = "absolute";
+                head.style.position = 'relative'; //fixed
+                head.style.top = 100;
+            }
+        }
+    </script>
+
+    <footer id="foot">
+        <p id="copy">2020 © Minden jog fenntartva Zoli's Bakery Kft.</p>
+        <p id="copy">Az oldalt készítette: Kapitány Zoltán </p>
+    </footer>
+
+</body>
+
+</html>
